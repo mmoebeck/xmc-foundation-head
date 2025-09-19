@@ -55,7 +55,7 @@ jobs:
 
       - name: Prepare standalone deployment package
         run: |
-          mkdir -p deploy/.next/static
+          mkdir -p deploy/.next/static deploy/.next/standalone
           cp -r .next/standalone/. deploy/
           cp -r .next/static/. deploy/.next/static
           cp -r public deploy/public || true
