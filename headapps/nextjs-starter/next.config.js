@@ -7,6 +7,7 @@ const publicUrl = jssConfig.publicUrl;
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
+  output: 'standalone',
   // Set assetPrefix to our public URL
   assetPrefix: publicUrl,
 
